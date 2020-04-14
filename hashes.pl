@@ -21,4 +21,20 @@ if ( exists($data{'John'} ) ) {
     print "John's age does not exist\n";
 }
 
+$size = @names;
+print("Size: $size\n");
+$size = @ ages;
+print("Size: $size\n");
+
+# adding elements
+$data{'Ali'} = 65;
+@keys = keys %data;
+print("@keys\n");
+
+#delete elements
+delete $data{'Ali'};
+@keys = keys %data;
+print("@keys\n");
+
+
 
