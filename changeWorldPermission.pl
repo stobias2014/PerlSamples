@@ -7,12 +7,16 @@ my $path;
 my @paths;
 
 sub ChangeWorldPermissions {
-    @paths = @_;
-    
+    @paths = @_;    
+
     foreach $path (@_) {
-        chmod 0744, $path;   
+         if( -e $path ) {
+            print("File or directory exists.\n");
+            chmod 0744, $path;
+        } else {
+            print("$path does not exist.\n");   
+        }
     }
 }
 
-ChangeWorldPermissions("/Users/saultobias/Desktop/perl/arrays.pl", "/Users/saultobias/Desktop/perl/foreach.pl");
-
+ChangeWorldPermissions(@ARGV);

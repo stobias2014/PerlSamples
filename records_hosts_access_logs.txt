@@ -1,0 +1,10 @@
+hostname0 2
+hostname1 2
+hostname2 2
+hostname3 2
+hostname4 2
+hostname5 2
+hostname6 2
+hostname7 2
+hostname8 2
+hostname9 2
